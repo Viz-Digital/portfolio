@@ -1,892 +1,469 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html class="dark" lang="en">
 <head>
-    <!--
-     - Roxy: Bootstrap template by GettTemplates.com
-     - https://gettemplates.co/roxy
-    -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Viz digital</title>
-    <meta name="description" content="Roxy">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
-    <!-- External CSS -->
-    <!-- <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="vendor/select2/sele4ct2.min.css"> -->
-    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans:wght@300&family=Source+Sans+Pro:wght@300&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    <!-- font Awesome -->
-    <script src="https://kit.fontawesome.com/3d90d5af90.js" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-        crossorigin="anonymous"></script>
-
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Visal Chandran - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed": "#1a1a2e",
+                      "surface-container": "#1e2020",
+                      "inverse-primary": "#006875",
+                      "surface-tint": "#00daf3",
+                      "on-primary-container": "#00626e",
+                      "on-tertiary-fixed": "#1c1b1b",
+                      "surface-container-lowest": "#0d0e0f",
+                      "primary": "#c3f5ff",
+                      "error-container": "#93000a",
+                      "secondary": "#c6c4df",
+                      "surface": "#121414",
+                      "inverse-on-surface": "#2f3131",
+                      "surface-variant": "#333535",
+                      "outline": "#849396",
+                      "secondary-fixed": "#e2e0fc",
+                      "surface-container-high": "#282a2b",
+                      "tertiary": "#efecec",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "on-tertiary-container": "#5a5959",
+                      "background": "#121414",
+                      "on-surface-variant": "#bac9cc",
+                      "on-primary-fixed-variant": "#004f58",
+                      "on-surface": "#e2e2e2",
+                      "primary-fixed": "#9cf0ff",
+                      "on-secondary-fixed-variant": "#45455b",
+                      "on-error": "#690005",
+                      "on-secondary": "#2f2e43",
+                      "tertiary-fixed": "#e5e2e1",
+                      "on-tertiary": "#313030",
+                      "on-secondary-container": "#b8b6d0",
+                      "surface-bright": "#38393a",
+                      "on-error-container": "#ffdad6",
+                      "primary-fixed-dim": "#00daf3",
+                      "tertiary-container": "#d3d0cf",
+                      "surface-container-low": "#1a1c1c",
+                      "on-tertiary-fixed-variant": "#474646",
+                      "on-background": "#e2e2e2",
+                      "surface-dim": "#121414",
+                      "outline-variant": "#3b494c",
+                      "surface-container-highest": "#333535",
+                      "secondary-container": "#47475d",
+                      "on-primary-fixed": "#001f24",
+                      "error": "#ffb4ab",
+                      "on-primary": "#00363d",
+                      "inverse-surface": "#e2e2e2",
+                      "secondary-fixed-dim": "#c6c4df",
+                      "primary-container": "#00e5ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "base": "8px",
+                      "lg": "48px",
+                      "sm": "12px",
+                      "xl": "80px",
+                      "md": "24px",
+                      "xs": "4px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "code-inline": ["JetBrains Mono"],
+                      "label-sm": ["JetBrains Mono"],
+                      "display-lg": ["Inter"],
+                      "title-md": ["Inter"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                      "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                      "code-inline": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                      "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                      "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                      "title-md": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
+                      "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+              }
+            },
+          },
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        main {
+            perspective: 1500px;
+        }
+        .glass-panel {
+            background: rgba(26, 26, 46, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transform-style: preserve-3d;
+        }
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(40px) scale(0.95);
+            transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1),
+                        transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal-up.active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        .scroll-3d {
+            transform-style: preserve-3d;
+            will-change: transform;
+        }
+        .glow-hover:hover {
+            box-shadow: 0 12px 32px rgba(0, 229, 255, 0.15);
+        }
+        .tech-chip {
+            background: rgba(0, 229, 255, 0.1);
+            border: 1px solid rgba(0, 229, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        /* Scroll Progress Bar */
+        #scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #c3f5ff, #00e5ff);
+            z-index: 100;
+            width: 0%;
+            transition: width 0.1s ease-out;
+        }
+        /* Floating Animation for elements */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating {
+            animation: float 4s ease-in-out infinite;
+        }
+        .floating-delayed {
+            animation: float 4s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+    </style>
 </head>
+<body class="bg-background text-on-surface min-h-screen antialiased selection:bg-primary-container selection:text-on-secondary-fixed relative overflow-x-hidden">
+    <div id="scroll-progress"></div>
+    <!-- Fixed WebGL Background -->
+    <div class="fixed inset-0 z-[-1] pointer-events-none">
+        <div class="absolute inset-0 w-full h-full" style="display:block;">
+            <canvas id="shader-canvas-ANIMATION_2" style="display:block;width:100%;height:100%"></canvas>
+            <script>
+            (function() {
+              const canvas = document.getElementById('shader-canvas-ANIMATION_2');
+              function syncSize() {
+                const w = canvas.clientWidth  || 1280;
+                const h = canvas.clientHeight || 720;
+                if (canvas.width !== w || canvas.height !== h) {
+                  canvas.width  = w;
+                  canvas.height = h;
+                }
+              }
+              if (typeof ResizeObserver !== 'undefined') {
+                new ResizeObserver(syncSize).observe(canvas);
+              }
+              syncSize();
+              const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+              if (!gl) return;
+              const vs = 'attribute vec2 a_position; varying vec2 v_texCoord; void main() { v_texCoord = a_position * 0.5 + 0.5; gl_Position = vec4(a_position, 0.0, 1.0); }';
+              const fs = 'precision highp float; varying vec2 v_texCoord; uniform float u_time; uniform vec2 u_resolution; uniform vec2 u_mouse; void main() { vec2 uv = v_texCoord; vec2 mouse = u_mouse / u_resolution; float d = distance(uv, mouse); float strength = 0.05 * exp(-d * 4.0); vec2 distortion = normalize(uv - mouse) * strength * sin(u_time * 0.5); vec2 p = uv + distortion; float noise1 = sin(p.x * 10.0 + u_time * 0.2) * cos(p.y * 8.0 - u_time * 0.3); float noise2 = cos(p.x * 6.0 - u_time * 0.1) * sin(p.y * 12.0 + u_time * 0.4); vec3 color1 = vec3(0.07, 0.08, 0.08); vec3 color2 = vec3(0.0, 0.9, 1.0); vec3 color3 = vec3(0.1, 0.11, 0.18); vec3 finalColor = mix(color1, color3, noise1 * 0.5 + 0.5); finalColor = mix(finalColor, color2, clamp(noise2 * strength * 10.0, 0.0, 0.1)); float vignette = 1.0 - smoothstep(0.5, 1.5, length(uv - 0.5)); finalColor *= vignette; gl_FragColor = vec4(finalColor, 1.0); }';
+              function cs(type, src) {
+                const s = gl.createShader(type);
+                gl.shaderSource(s, src);
+                gl.compileShader(s);
+                return s;
+              }
+              const prog = gl.createProgram();
+              gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+              gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+              gl.linkProgram(prog);
+              gl.useProgram(prog);
+              const buf = gl.createBuffer();
+              gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+              gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+              const pos = gl.getAttribLocation(prog, 'a_position');
+              gl.enableVertexAttribArray(pos);
+              gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+              const uTime = gl.getUniformLocation(prog, 'u_time');
+              const uRes = gl.getUniformLocation(prog, 'u_resolution');
+              const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+              let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+              window.addEventListener('mousemove', (event) => {
+                const rect = canvas.getBoundingClientRect();
+                if (rect.width && rect.height) {
+                  const nx = (event.clientX - rect.left) / rect.width;
+                  const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+                  mouse.x = nx * canvas.width;
+                  mouse.y = ny * canvas.height;
+                }
+              });
+              function render(t) {
+                if (typeof ResizeObserver === 'undefined') syncSize();
+                gl.viewport(0, 0, canvas.width, canvas.height);
+                if (uTime) gl.uniform1f(uTime, t * 0.001);
+                if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+                if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+                gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+                requestAnimationFrame(render);
+              }
+              render(0);
+            })();
+            </script>
+        </div>
+        <div class="absolute inset-0 bg-background/80 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background"></div>
+    </div>
 
-<body data-spy="scroll" data-target="#navbar" class="static-layout">
-    <nav id="header-navbar" class="navbar navbar-expand-lg py-4">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center text-white" href="/">
-                <h3 class="font-weight-bolder mb-0">VISAL CHANDRAN</h3>
+    <!-- TopAppBar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-white/5 shadow-[0_12px_32px_rgba(0,229,255,0.08)]">
+        <div class="flex items-center justify-between px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto h-20">
+            <a class="flex items-center gap-xs scale-105 active:scale-95 transition-transform group" href="#home">
+                <span class="material-symbols-outlined text-primary text-2xl group-hover:text-primary-container transition-colors" data-weight="fill" style="font-variation-settings: 'FILL' 1;">terminal</span>
+                <span class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary tracking-tight">VISAL CHANDRAN</span>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header"
-                aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="lnr lnr-menu"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-nav-header">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#who-we-are">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#reservation">Contact</a>
-                    </li>
-
-                    <!-- <li class="nav-item">
-                        <a id="side-search-open" class="nav-link" href="#">
-                            <span class="lnr lnr-magnifier"></span>
-                        </a>
-                    </li> -->
-                    <!-- <li class="nav-item only-desktop">
-                        <a class="nav-link" id="side-nav-open" href="#">
-                            <span class="lnr lnr-menu"></span>
-                        </a>
-                    </li> -->
-                    <li class="nav-item only-desktop">
-                        <a class="nav-link btn btn-outline-primary btn-lg" id="side-nav-open" href="RESUME_UPDATED.pdf">
-                            <!-- <span class="lnr lnr-menu"></span> -->
-                            Resume
-                        </a>
-                    </li>
-                </ul>
+            <div class="hidden md:flex items-center gap-lg">
+                <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2" href="#about">About</a>
+                <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2" href="#skills">Skills</a>
+                <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2" href="#projects">Projects</a>
+                <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2" href="#contact">Contact</a>
             </div>
+            <a class="hidden md:flex items-center justify-center font-label-sm text-label-sm uppercase tracking-widest text-primary border border-white/5 hover:bg-white/10 transition-all duration-300 rounded px-md py-sm scale-105 active:scale-95" href="RESUME_UPDATED.pdf" target="_blank">Resume</a>
+            <button class="md:hidden text-on-surface p-2">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
         </div>
     </nav>
 
+    <!-- Main Content -->
+    <main class="relative z-10 pt-24 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto flex flex-col gap-xl md:gap-[120px]">
 
+        <!-- Hero Section -->
+        <section class="min-h-[70vh] flex flex-col justify-center items-start gap-md pt-xl reveal-up scroll-3d" id="home">
+            <div class="inline-flex items-center gap-2 tech-chip px-3 py-1 rounded-full mb-4 floating">
+                <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+                <span class="font-label-sm text-label-sm uppercase text-primary-container">Available for new opportunities</span>
+            </div>
+            <h1 class="font-display-lg text-display-lg md:text-[72px] md:leading-[80px] font-bold text-on-surface tracking-tighter">
+                Visal Chandran
+            </h1>
+            <h2 class="font-title-md text-title-md md:text-[32px] md:leading-[40px] text-primary max-w-2xl">
+                Technical Lead | Front-End Developer | Flutter Expert
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-4">
+                Dedicated professional with 2 years of experience providing high-level technical support and managing projects. Passionate about building responsive web experiences and cross-platform mobile applications.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-8">
+                <a class="inline-flex items-center justify-center font-label-sm text-label-sm uppercase tracking-widest bg-primary-container text-on-secondary-fixed hover:bg-surface-tint transition-all duration-300 rounded px-xl py-md glow-hover" href="#projects">
+                    View Projects
+                </a>
+                <a class="inline-flex items-center justify-center font-label-sm text-label-sm uppercase tracking-widest text-primary border border-white/20 hover:bg-white/5 transition-all duration-300 rounded px-xl py-md" href="#contact">
+                    Get in Touch
+                </a>
+            </div>
+        </section>
 
-    </div>
-    <div class="jumbotron d-flex align-items-center">
-        <div class="container wrapper">
-            <div class="static-txt">I'm a</div>
-            <ul class="dynamic-txt">
-                <li><span>Front-End Developer</span></li>
-                <li><span>Designer</span></li>
-                <li><span>Freelancer</span></li>
-                <li><span>Technical Lead</span></li>
-            </ul>
-        </div>
-    </div>
-    <!-- <div class="rectangle-1"></div> -->
-    <div class="rectangle-2"></div>
-    <!-- <div class="rectangle-transparent-1"></div>
-    <div class="rectangle-transparent-2"></div> -->
-    <div class="circle-1"></div>
-    <div class="circle-2"></div>
-    <div class="circle-3"></div>
-    <!-- <div class="triangle triangle-1">
-        <img src="img/obj_triangle.png" alt="">
-    </div> -->
-
-    <div class="triangle triangle-3">
-        <img src="img/obj_triangle.png" alt="">
-    </div>
-    <div class="triangle triangle-4">
-        <img src="img/obj_triangle.png" alt="">
-    </div>
-    </div>
-    <!-- About me  -->
-    <section id="who-we-are" class="bg-white">
-        <div class="container">
-            <div class="section-content">
-                <div class="title-wrap" data-aos="fade-up">
-                    <h2 class="section-title"><b> ABOUT ME</b></h2>
-                    <span></span>
-                    <p class="section-sub-title">I am a Technical Support Engineer with 2 years of experience in
-                        providing
-                        technical support and also served as project manager. I am searching for a
-                        challenging job in a progressive company where I can use my skills to benefit
-                        the company while also enhancing my own abilities.
+        <!-- About Section -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center reveal-up scroll-3d pt-xl" id="about">
+            <div class="md:col-span-5 order-2 md:order-1 relative group">
+                <div class="absolute inset-0 bg-primary-container/20 rounded-xl blur-2xl group-hover:bg-primary-container/30 transition-all duration-500"></div>
+                <!-- Placeholder for professional image -->
+                <div class="w-full h-auto aspect-[4/5] object-cover rounded-xl relative z-10 glass-panel flex items-center justify-center text-primary-container text-center p-8 border border-white/10 grayscale hover:grayscale-0 transition-all duration-700 floating-delayed">
+                    <span class="material-symbols-outlined text-8xl">person</span>
+                </div>
+            </div>
+            <div class="md:col-span-7 order-1 md:order-2 flex flex-col gap-6 md:pl-lg">
+                <div class="flex items-center gap-4">
+                    <span class="w-8 h-[1px] bg-primary-container"></span>
+                    <h3 class="font-label-sm text-label-sm uppercase tracking-widest text-primary">01 / Profile</h3>
+                </div>
+                <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface">
+                    Bridging technical support excellence with creative development.
+                </h2>
+                <div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+                    <p>
+                        I am a Technical Lead with over 6 years of combined experience across leading organizations, specializing in technical direction, guidance, and architectural oversight to ensure projects are delivered with excellence.
+                    </p>
+                    <p>
+                        Currently driving technical success at <span class="text-primary font-semibold">Xylem Learning Pvt Ltd</span> (3.5 years), and previously contributed to the growth of <span class="text-primary font-semibold">MedPG</span> (2.9 years).
+                    </p>
+                    <p>
+                        Beyond leadership, I specialize in creating responsive websites and web apps using HTML, CSS, and JavaScript. I've also mastered Flutter to build high-performance, visually appealing Material UI applications across platforms.
                     </p>
                 </div>
-
-                <div class="row text-center">
-                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                        <!-- <img class="rounded-circle" src="img/icons/icons8-service.gif" alt="Generic placeholder image"
-                            width="130px" height="130px"> -->
-                        <span><i class="fa-solid fa-gears fa-6x frontEnd"></i></span>
-                        <h5 class="mb-4">Tech Support Engineer</h5>
-                        <p>I'm a 2 years experienced technical Support engineer who passionated to providing technical
-                            direction, guidance, and support to the development team, and ensuring that the project is
-                            completed on time and within budget. </p>
-                        <!-- <p><a class="btn btn-link" href="#" role="button">View details</a></p> -->
-                    </div>
-                    <div class="col-md-4 col-sm-6" data-aos="fade-up">
-                        <!-- <img class="rounded-circle" src="img/icons/animat-responsive.gif"
-                            alt="Generic placeholder image" width="140" height="140"> -->
-                        <span><i class="fa-solid fa-code fa-6x frontEnd"></i></i></span>
-                        <h5 class="mb-4">Front-End Developer</h5>
-                        <p>I create responsive websites and web apps using HTML, CSS, and JavaScript to provide users
-                            the greatest and most relevant experience for their browser and device.</p>
-                        <!-- <p><a class="btn btn-link" href="#" role="button">View details</a></p> -->
-                    </div>
-                    <!-- /.col-md-4 col-sm-6  -->
-                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
-                        <!-- <img class="rounded-circle" src="img/icons/animat-checkmark.gif" alt="Generic placeholder image"
-                            width="140" height="140"> -->
-                        <span><i class="fa-brands fa-android fa-6x frontEnd"></i></span>
-                        <h5 class="mb-4">Flutter Material UI</h5>
-                        <p>As a part of learning new Technologies I choose to master new cross platform technology
-                            Flutter. As a result, I have become an Expert in developing flutter Material UI</p>
-                        <!-- <p><a class="btn btn-link" href="#" role="button">View details</a></p> -->
-                    </div>
-                    <!-- /.col-md-4 col-sm-6  -->
-                </div>
-                <!-- /.row -->
             </div>
-        </div>
-    </section>
-    <hr>
-    <section id="skills" class="bg-white">
-        <div class="container">
-            <div class="section-content pt-0">
-                <h2 class="skill-title"><b> SKILLS</b></h2>
-                <div class="row">
-                    <div class="col-md-6" data-aos="fade-right">
-                        <!-- Skill Item -->
-                        <div class="skill-item">
-                            <div class="d-flex justify-content-between">
-                                <p>HTML</p>
-                                <p class="text-muted">90%</p>
-                            </div>
-                            <div class="progress" data-percent="90%">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0"></div>
-                            </div>
-                        </div>
-                        <!-- End Skill Item -->
-                        <!-- Skill Item -->
-                        <div class="skill-item">
-                            <div class="d-flex justify-content-between">
-                                <p>CSS</p>
-                                <p class="text-muted">85%</p>
-                            </div>
-                            <div class="progress" data-percent="85%">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0"></div>
-                            </div>
-                        </div>
-                        <!-- End Skill Item -->
-                        <!-- Skill Item -->
-                        <div class="skill-item">
-                            <div class="d-flex justify-content-between">
-                                <p>JAVASCRIPT</p>
-                                <p class="text-muted">73%</p>
-                            </div>
-                            <div class="progress" data-percent="73%">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="73" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0"></div>
-                            </div>
-                        </div>
-                        <!-- End Skill Item -->
-                        <!-- Skill Item -->
-                        <div class="skill-item">
-                            <div class="d-flex justify-content-between">
-                                <p>FLUTTER</p>
-                                <p class="text-muted">50%</p>
-                            </div>
-                            <div class="progress" data-percent="50%">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0"></div>
-                            </div>
-                        </div>
-                        <!-- End Skill Item -->
-                        <!-- Skill Item -->
-                        <div class="skill-item">
-                            <div class="d-flex justify-content-between">
-                                <p>Python</p>
-                                <p class="text-muted">80%</p>
-                            </div>
-                            <div class="progress" data-percent="80%">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0"></div>
-                            </div>
-                        </div>
-                        <!-- End Skill Item -->
-                        <!-- Skill Item -->
-                        <div class="skill-item">
-                            <div class="d-flex justify-content-between">
-                                <p>adobe creative suites</p>
-                                <p class="text-muted">80%</p>
-                            </div>
-                            <div class="progress" data-percent="80%">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0"></div>
-                            </div>
-                        </div>
-                        <!-- End Skill Item -->
-                    </div>
-                    <div class="col-md-6" data-aos="fade-left">
-                        <!-- Skill Item -->
-                        <div class="skill-item">
-                            <div class="d-flex justify-content-between">
-                                <p>Django</p>
-                                <p class="text-muted">70%</p>
-                            </div>
-                            <div class="progress" data-percent="70%">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0"></div>
-                            </div>
-                        </div>
-                        <!-- End Skill Item -->
-                        <!-- Skill Item -->
-                        <div class="skill-item">
-                            <div class="d-flex justify-content-between">
-                                <p>sql</p>
-                                <p class="text-muted">75%</p>
-                            </div>
-                            <div class="progress" data-percent="75%">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0"></div>
-                            </div>
-                        </div>
-                        <!-- End Skill Item -->
-                        <!-- Skill Item -->
-                        <div class="skill-item">
-                            <div class="d-flex justify-content-between">
-                                <p>MongoDB</p>
-                                <p class="text-muted">70%</p>
-                            </div>
-                            <div class="progress" data-percent="70%">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0"></div>
-                            </div>
-                        </div>
-                        <!-- End Skill Item -->
-                        <!-- Skill Item -->
-                        <div class="skill-item">
-                            <div class="d-flex justify-content-between">
-                                <p>Google cloud</p>
-                                <p class="text-muted">70%</p>
-                            </div>
-                            <div class="progress" data-percent="70%">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0"></div>
-                            </div>
-                        </div>
-                        <!-- End Skill Item -->
-                        <!-- Skill Item -->
-                        <div class="skill-item">
-                            <div class="d-flex justify-content-between">
-                                <p>aws</p>
-                                <p class="text-muted">50%</p>
-                            </div>
-                            <div class="progress" data-percent="50%">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0"></div>
-                            </div>
-                        </div>
-                        <!-- End Skill Item -->
-                        <!-- Skill Item -->
-                        <div class="skill-item">
-                            <div class="d-flex justify-content-between">
-                                <p>AD/DS</p>
-                                <p class="text-muted">50%</p>
-                            </div>
-                            <div class="progress" data-percent="50%">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 0"></div>
-                            </div>
-                        </div>
-                        <!-- End Skill Item -->
+        </section>
 
-                    </div>
-                </div>
+        <!-- Skills Section -->
+        <section class="flex flex-col gap-lg reveal-up scroll-3d pt-xl" id="skills">
+            <div class="flex items-center gap-4 mb-8">
+                <span class="w-8 h-[1px] bg-primary-container"></span>
+                <h3 class="font-label-sm text-label-sm uppercase tracking-widest text-primary">02 / Technical Stack</h3>
             </div>
-        </div>
-    </section>
-    <hr>
-    <section id="section-featurettes" class="featurettes">
-
-        <div class="container">
-            <div class="feature-content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row align-items-center">
-
-                            <div class="col-md-4 offset-md-2 col-sm-6" data-aos="flip-left">
-                                <img class="my-5" src="img/app-profile-mockup 1.png" alt="">
-                            </div>
-                            <!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
-
-                            <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="fade-left">
-                                <h4 class="mb-4">Latest Flutter Project</h4>
-                                <p>This is my first project of my ongoing learning campaign of flutter. This project
-                                    performs the body mass index of a human body</p>
-                                <a class="btn btn-outline-dark btn-lg github" id="side-nav-open" href="https://github.com/Viz-Digital/BMIcalculator-project/tree/master">
-                                    <!-- <span class="lnr lnr-menu"></span> -->
-                                    <i class="fa-brands fa-github fa-1x"></i> GitHub
-                                </a>
-                                <!-- <div class="progress mb-3">
-                                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
-                                        aria-valuemin="0" aria-valuemax="100">HTML5 95%</div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
-                                        aria-valuemin="0" aria-valuemax="100">CSS3 90%</div>
-                                </div> -->
-                            </div>
-                            <!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
-
-                        </div>
-                        <!--/ .featurettes-item -->
-
-                    </div>
-                    <!--/ .col-md-12 -->
-
-                </div>
-                <!--/ .row -->
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-gutter">
+                <!-- Skills Chips -->
+                <div class="tech-chip p-md rounded-xl flex items-center justify-center text-center font-code-inline text-primary transition-all duration-300 hover:scale-105 glow-hover cursor-default">HTML</div>
+                <div class="tech-chip p-md rounded-xl flex items-center justify-center text-center font-code-inline text-primary transition-all duration-300 hover:scale-105 glow-hover cursor-default">CSS</div>
+                <div class="tech-chip p-md rounded-xl flex items-center justify-center text-center font-code-inline text-primary transition-all duration-300 hover:scale-105 glow-hover cursor-default">JavaScript</div>
+                <div class="tech-chip p-md rounded-xl flex items-center justify-center text-center font-code-inline text-primary transition-all duration-300 hover:scale-105 glow-hover cursor-default">Flutter</div>
+                <div class="tech-chip p-md rounded-xl flex items-center justify-center text-center font-code-inline text-primary transition-all duration-300 hover:scale-105 glow-hover cursor-default">Python</div>
+                <div class="tech-chip p-md rounded-xl flex items-center justify-center text-center font-code-inline text-primary transition-all duration-300 hover:scale-105 glow-hover cursor-default">Adobe Suite</div>
+                <div class="tech-chip p-md rounded-xl flex items-center justify-center text-center font-code-inline text-primary transition-all duration-300 hover:scale-105 glow-hover cursor-default">Django</div>
+                <div class="tech-chip p-md rounded-xl flex items-center justify-center text-center font-code-inline text-primary transition-all duration-300 hover:scale-105 glow-hover cursor-default">SQL</div>
+                <div class="tech-chip p-md rounded-xl flex items-center justify-center text-center font-code-inline text-primary transition-all duration-300 hover:scale-105 glow-hover cursor-default">MongoDB</div>
+                <div class="tech-chip p-md rounded-xl flex items-center justify-center text-center font-code-inline text-primary transition-all duration-300 hover:scale-105 glow-hover cursor-default">Google Cloud</div>
+                <div class="tech-chip p-md rounded-xl flex items-center justify-center text-center font-code-inline text-primary transition-all duration-300 hover:scale-105 glow-hover cursor-default">AWS</div>
+                <div class="tech-chip p-md rounded-xl flex items-center justify-center text-center font-code-inline text-primary transition-all duration-300 hover:scale-105 glow-hover cursor-default">AD/DS</div>
             </div>
-        </div>
-        <!--/ .container -->
+        </section>
 
-    </section>
-    <hr>
-    <!-- Testimonial Section-->
-    <!-- <section id="testimonial" class="section-padding bg-fixed bg-white overlay"
-        style="background-image: url(img/bg-white.jpg);">
-        <div class="container">
-            <div class="section-content" data-aos="fade-up">
-                <div class="heading-section text-center">
-                    <h2>
-                        User Testimonials
-                    </h2>
-                </div>
-                <div class="row"> -->
-    <!-- Testimonial -->
-    <!-- <div class="testi-content testi-carousel owl-carousel">
-                        <div class="testi-item text-center">
-                            <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                            <h4 class="testi-text"><b>ROXY</b> is best theme i used so far.<br> It’s ideal for guys
-                                without coding knowledge like me!</h4>
-                            <div class="testi-meta-inner d-flex justify-content-center align-items-center">
-                                <div class="testi-img mr-2">
-                                    <img src="img/testi-1.jpg" alt="">
-                                </div>
-                                <div class="testi-details">
-                                    <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
-                                    <p class="testi-desc mb-0">Web Designer</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="testi-item text-center">
-                            <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                            <h4 class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-                                <br> non doloribus ut, alias doloremque perspiciatis.
-                            </h4>
-                            <div class="testi-meta-inner d-flex justify-content-center align-items-center">
-                                <div class="testi-img mr-2">
-                                    <img src="img/testi-1.jpg" alt="">
-                                </div>
-                                <div class="testi-details">
-                                    <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
-                                    <p class="testi-desc mb-0">Web Designer</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testi-item text-center">
-                            <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                            <h4 class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-                                <br> non doloribus ut, alias doloremque perspiciatis.
-                            </h4>
-                            <div class="testi-meta-inner d-flex justify-content-center align-items-center">
-                                <div class="testi-img mr-2">
-                                    <img src="img/testi-1.jpg" alt="">
-                                </div>
-                                <div class="testi-details">
-                                    <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
-                                    <p class="testi-desc mb-0">Web Designer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-    <!-- End of Testimonial -->
-    </div>
-    </div>
-    </div>
-    </section>
-    <!-- End of Testimonial Section-->
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="bg-white">
-        <div class="container">
-            <div class="work-content">
-                <!-- Section Title -->
-                <div class="title-wrap">
-                    <h2 class="section-title"> Works </h2>
-                    <!-- <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-                        <br> pharetra augue. Donec id elit non mi.
-                    </p> -->
-                </div>
-                <!-- End of Section Title -->
-                <div class="row">
-                    <!-- Portfolio Holder -->
-                    <div class="col-md-12 portfolio-holder mt-3">
-                        <!-- Btn Filter -->
-                        <div class="filter-button-group btn-filter d-flex justify-content-center">
-                            <a tabindex="0" class="is-checked" data-filter="*">Show All</a>
-                            <a tabindex="0" data-filter=".minimalism">Blender</a>
-                            <a tabindex="0" data-filter=".vintage">Illustrator</a>
-                            <a tabindex="0" data-filter=".creative">Creative</a>
-                        </div>
-                        <!-- End of Btn Filter -->
-                        <!-- Portfolio Content -->
-                        <div class="grid-portfolio">
-                            <div class="grid-sizer"></div>
-                            <div class="gutter-sizer"></div>
-                            <!-- Portfolio Item -->
-                            <div class="grid-item minimalism" data-aos="fade-up">
-                                <div class="grid-item-wrapper">
-                                    <img src="img/lightningghost.png" alt="portfolio-img" class="portfolio-item">
-                                    <div class="grid-info">
-                                        <div class="grid-link d-flex justify-content-center">
-                                            <a class="img-pop" data-rel="lightcase" href="img/lightningghost.png"
-                                                title="Photo-1">
-                                                <span class="lnr lnr-move"></span>
-                                            </a>
-                                            <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                                <span class="lnr lnr-link"></span>
-                                            </a>
-                                        </div>
-                                        <div class="grid-title">
-                                            <h4>NFT</h4>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- End of Portfolio Item -->
-                            <!-- Portfolio Item -->
-                            <div class="grid-item Minimalism" data-aos="fade-up">
-                                <div class="grid-item-wrapper">
-                                    <img src="img/title.png" alt="portfolio-img" class="portfolio-item">
-                                    <div class="grid-info">
-                                        <div class="grid-link d-flex justify-content-center">
-                                            <a class="img-pop" data-rel="lightcase" href="img/title.png" title="Ship">
-                                                <span class="lnr lnr-move"></span>
-                                            </a>
-                                            <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                                <span class="lnr lnr-link"></span>
-                                            </a>
-                                        </div>
-                                        <div class="grid-title">
-                                            <h4>Title</h4>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- End of Portfolio Item -->
-                            <!-- Portfolio Item -->
-                            <div class="grid-item creative grid-item-height" data-aos="fade-up">
-                                <div class="grid-item-wrapper">
-                                    <img src="img/webpc@0.5x.jpg" alt="portfolio-img" class="portfolio-item">
-                                    <div class="grid-info">
-                                        <div class="grid-link d-flex justify-content-center">
-                                            <a class="img-pop" data-rel="lightcase" href="img/webpc@0.5x.jpg"
-                                                title="Tracy Portrait">
-                                                <span class="lnr lnr-move"></span>
-                                            </a>
-                                            <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                                <span class="lnr lnr-link"></span>
-                                            </a>
-                                        </div>
-                                        <div class="grid-title">
-                                            <h4>Creative</h4>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- End of Portfolio Item -->
-                            <!-- Portfolio Item -->
-                            <!-- <div class="grid-item creative" data-aos="fade-up">
-                                <div class="grid-item-wrapper">
-                                    <img src="img/photo-7.jpg" alt="portfolio-img" class="portfolio-item">
-                                    <div class="grid-info">
-                                        <div class="grid-link d-flex justify-content-center">
-                                            <a class="img-pop" data-rel="lightcase" href="img/photo-7.jpg"
-                                                title="Guitar">
-                                                <span class="lnr lnr-move"></span>
-                                            </a>
-                                            <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                                <span class="lnr lnr-link"></span>
-                                            </a>
-                                        </div>
-                                        <div class="grid-title">
-                                            <h4>Chair</h4>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div> -->
-                            <!-- End of Portfolio Item -->
-                            <!-- Portfolio Item -->
-                            <div class="grid-item vintage" data-aos="fade-up">
-                                <div class="grid-item-wrapper">
-                                    <img src="img/space.jpg" alt="portfolio-img" class="portfolio-item">
-                                    <div class="grid-info">
-                                        <div class="grid-link d-flex justify-content-center">
-                                            <a class="img-pop" data-rel="lightcase" href="img/crypto_ghost#003.png"
-                                                title="Bookself">
-                                                <span class="lnr lnr-move"></span>
-                                            </a>
-                                            <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                                <span class="lnr lnr-link"></span>
-                                            </a>
-                                        </div>
-                                        <div class="grid-title">
-                                            <h4>Hidden Book</h4>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- End of Portfolio Item -->
-                            <!-- Portfolio Item -->
-                            <!-- <div class="grid-item creative" data-aos="fade-up">
-                                <div class="grid-item-wrapper">
-                                    <img src="img/photo-9.jpg" alt="portfolio-img" class="portfolio-item">
-                                    <div class="grid-info">
-                                        <div class="grid-link d-flex justify-content-center">
-                                            <a class="img-pop" data-rel="lightcase" href="img/photo-9.jpg"
-                                                title="Guitar">
-                                                <span class="lnr lnr-move"></span>
-                                            </a>
-                                            <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                                <span class="lnr lnr-link"></span>
-                                            </a>
-                                        </div>
-                                        <div class="grid-title">
-                                            <h4>Red</h4>
-                                        </div>
-                                    </div>
-
-                                </div> -->
-                        </div>
-                        <!-- End of Portfolio Item -->
-                    </div>
-                    <!-- End of Portfolio Content -->
-                </div>
-                <!-- End of Portfolio Holder -->
+        <!-- Projects Section -->
+        <section class="flex flex-col gap-lg reveal-up scroll-3d pt-xl" id="projects">
+            <div class="flex items-center gap-4 mb-8">
+                <span class="w-8 h-[1px] bg-primary-container"></span>
+                <h3 class="font-label-sm text-label-sm uppercase tracking-widest text-primary">03 / Selected Work</h3>
             </div>
-        </div>
-        </div>
-    </section>
-    <!-- End of Portfolio Section -->
-    <!-- Client Section -->
-    <!-- 
-        <section id="client" class="overlay bg-fixed" style="background-image: url(img/bg.jpg);">
-        <div class="container">
-            <div class="section-content" data-aos="fade-up">
-                <div class="row ">
-                    <div class="col-md-12">
-
-                        <div class="title-wrap mb-5">
-                            <h2>Who love to <span> work</span> with us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                <!-- Project Card: BMI Calculator -->
+                <div class="glass-panel rounded-xl overflow-hidden group hover:scale-[1.01] transition-transform duration-300 glow-hover flex flex-col h-full cursor-pointer">
+                    <div class="relative h-64 overflow-hidden border-b border-white/10">
+                        <div class="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
+                        <div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-700 flex items-center justify-center bg-surface-variant" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800');">
+                            <span class="material-symbols-outlined text-white text-6xl opacity-20">monitor_heart</span>
                         </div>
-
                     </div>
-
-
-                    <div class="col-md-12 client-holder">
-                        <div class="client-slider owl-carousel">
-                            <div class="client-item">
-                                <img class="img-responsive" src="img/client.png" alt=" ">
-                            </div>
-                            <div class="client-item">
-                                <img class="img-responsive" src="img/client.png" alt=" ">
-                            </div>
-                            <div class="client-item">
-                                <img class="img-responsive" src="img/client.png" alt=" ">
-                            </div>
-                            <div class="client-item">
-                                <img class="img-responsive" src="img/client.png" alt=" ">
-                            </div>
-                            <div class="client-item">
-                                <img class="img-responsive" src="img/client.png" alt=" ">
-                            </div>
-                            <div class="client-item">
-                                <img class="img-responsive" src="img/client.png" alt=" ">
-                            </div>
+                    <div class="p-md flex flex-col flex-grow gap-4">
+                        <h4 class="font-title-md text-title-md text-on-surface font-semibold">BMI Calculator</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                            A high-performance cross-platform application built with Flutter. This tool calculates human body mass index to provide health insights.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
+                            <span class="font-code-inline text-code-inline text-primary bg-primary/5 px-2 py-1 rounded">Flutter</span>
+                            <span class="font-code-inline text-code-inline text-primary bg-primary/5 px-2 py-1 rounded">Dart</span>
+                            <span class="font-code-inline text-code-inline text-primary bg-primary/5 px-2 py-1 rounded">Material UI</span>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-    </section> -->
-    <!-- End of Client Section -->
-    <!-- Reservation Section -->
-    <hr>
-    <section id="reservation" class="bg-white res-content">
-        <div class="container">
-            <div class="title-wrap" data-aos="fade-up">
-                <h2 class="cont-title">Get In Touch</h2>
-                <!-- <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p> -->
-            </div>
-            <!-- End of Section Title -->
-            <div class="row">
-                <!-- Contact Form Holder -->
-                <div class="col-md-8 offset-md-2 contact-form-holder mt-4" data-aos="fade-up">
-                    <form action="mailto:vizdigitaldeals@gmail.com" method="post" enctype="text/plain">
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber"
-                                    placeholder="Phone">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="websiteUrl" name="websiteUrl"
-                                    placeholder="Website">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <textarea class="form-control" id="message" name="message" rows="6"
-                                    placeholder="Your Message ..."></textarea>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send
-                                    Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="res-content">
-                    <div class="contact-wrap" data-aos="fade-up">
-                        <h2 class="section-title">Where To Find?</h2>
-                    </div>
-                    <div class="row text-center row-align">
-                        <div class="col-md-4" data-aos="fade-up">
-                            <span class="fa-solid fa-location-arrow fs-40 py-5 d-block"></span>
-                            <h5>LOCATION</h5>
-                            <p class="section-sub-title ">kerala <br>Thrissur <br>Thalikulam P O <br>Thalikulam House
-                                <br> 680569 </p>
-                        </div>
-                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                            <span class="fa-solid fa-phone fs-40 py-5 d-block"></span>
-                            <h5>CALL ME</h5>
-                            <p class="section-sub-title">9633061238</p>
-                        </div>
-                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                            <span class="fa-solid fa-envelope fs-40 py-5 d-block"></span>
-                            <h5>EMAIL</h5>
-                            <p class="section-sub-title">vizdigitaldeals@gmail.com</p>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- End of Contact Form Holder -->
-            </div>
-            <!-- <div class="row align-items-center">
-                <div class="col-lg-5 offset-lg-1 mb-5 mb-lg-0" data-aos="fade-right">
-                    <div class="bg-white p-5 shadow">
-                        <div class="heading-section text-center">
-                            <h2 class="mb-4">
-                                Contact Us
-                            </h2>
-                        </div> -->
-            <!-- <form method="post" name="contact-us" action="">
-                            <div class="row">
-                                <div class="col-md-12 form-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <input type="text" class="form-control" id="email" name="email" placeholder="Email">
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <input type="number" class="form-control" id="phoneNumber" name="phoneNumber"
-                                        placeholder="Phone">
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <input type="text" class="form-control" id="websiteUrl" name="websiteUrl"
-                                        placeholder="Website">
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <textarea class="form-control" id="message" name="message" rows="6"
-                                        placeholder="Your Message ..."></textarea>
-                                </div>
-                                <div class="col-md-12 text-center">
-                                    <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send
-                                        Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div> -->
-            <!-- <div class="col-lg-4 offset-lg-1" data-aos="fade-left">
-                    <h2 class="mb-4">
-                        Best solution to create any website. Pay once.
-                    </h2>
-                    <p class="mb-4">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                        leo.</p>
-
-                    <ul class="list-inline py-2">
-                        <li class="list-inline-item text-center">
-                            <span class="lnr fs-40 lnr-rocket"></span>
-                            <p>Fast delivery</p>
-                        </li>
-                        <li class="list-inline-item text-center">
-                            <span class="lnr fs-40 lnr-magic-wand"></span>
-                            <p>Awesome design</p>
-                        </li>
-                        <li class="list-inline-item text-center">
-                            <span class="lnr fs-40 lnr-cog"></span>
-                            <p>Easy to customize</p>
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-link p-0">
-                        <span>PURCHASE NOW</span>
-                        <span class="lnr lnr-arrow-right"></span>
-                    </a>
-                </div> -->
-        </div>
-
-        </div>
-    </section>
-    <!-- End of Reservation Section -->
-    <!-- Features Section-->
-    <!-- <section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
-        <div class="container">
-            <div class="section-content" data-aos="fade-up">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2 class="mb-2">Make a beautiful website, or million of them</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, veritatis qui eligendi
-                            delectus quia fuga!</p>
-                        <a class="btn btn-outline-primary btn-lg">FEATURES</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End of Features Section-->
-    </div>
-    <footer class="mastfoot my-3">
-        <div class="inner container">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 d-flex align-items-center">
-
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <nav class="nav nav-mastfoot justify-content-center">
-                        <a class="nav-link" href="https://www.facebook.com/profile.php?id=100057532425669">
-                            <i class="fab fa-facebook-f"></i>
+                        <a href="https://github.com/Viz-Digital/BMIcalculator-project/tree/master" target="_blank" class="mt-4 inline-flex items-center gap-2 text-primary hover:text-primary-container transition-colors font-label-sm uppercase tracking-widest">
+                            <span class="material-symbols-outlined text-sm">code</span> View on GitHub
                         </a>
-                        <a class="nav-link" href="https://twitter.com/vizdigitaldeals">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="nav-link" href="https://www.instagram.com/aether.12/">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="nav-link" href="https://www.linkedin.com/in/vishal-chandran777">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a class="nav-link" href="#">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </nav>
+                    </div>
                 </div>
-
-                <div class="col-lg-4 col-md-12 d-flex align-items-center">
-                    <p class="mx-auto text-center mb-0"> <a href="https://gettemplates.co" target="_blank"></a>.</p>
+                <!-- Placeholder for other projects -->
+                <div class="glass-panel rounded-xl border-dashed border-2 border-white/10 flex flex-col items-center justify-center p-md text-center opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-pointer">
+                    <span class="material-symbols-outlined text-4xl text-on-surface-variant mb-2">add_circle</span>
+                    <p class="font-body-md text-on-surface-variant">More projects coming soon...</p>
                 </div>
+            </div>
+        </section>
+    </main>
 
-
+    <!-- Footer -->
+    <footer class="w-full py-lg bg-surface-container-lowest border-t border-white/5 mt-xl relative z-10" id="contact">
+        <div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto gap-md md:gap-0">
+            <div class="font-headline-lg text-headline-lg text-primary font-bold">VISAL CHANDRAN</div>
+            <div class="flex items-center gap-6">
+                <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-container transition-colors" href="https://www.facebook.com/profile.php?id=100057532425669" target="_blank">Facebook</a>
+                <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-container transition-colors" href="https://twitter.com/vizdigitaldeals" target="_blank">Twitter</a>
+                <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-container transition-colors" href="https://www.instagram.com/aether.12/" target="_blank">Instagram</a>
+                <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-container transition-colors" href="https://www.linkedin.com/in/vishal-chandran777" target="_blank">LinkedIn</a>
+                <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-container transition-colors" href="mailto:vizdigitaldeals@gmail.com">Email</a>
+            </div>
+            <div class="font-body-md text-body-md text-on-surface-variant text-center">
+                © 2026 Visal Chandran. All rights reserved.
             </div>
         </div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/icons/icons8-up-arrow-50.png" alt=""></button>
+    </footer>
 
-        <script>
-            // Get the button
-            let mybutton = document.getElementById("myBtn");
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Reveal Animations with Staggering ---
+            const reveals = document.querySelectorAll('.reveal-up');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
 
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function () { scrollFunction() };
+                        // Stagger children if they exist (like skills chips or project cards)
+                        const children = target.querySelectorAll('.tech-chip, .glass-panel');
+                        if (children.length > 0) {
+                            children.forEach((child, index) => {
+                                child.style.opacity = '0';
+                                child.style.transform = 'translateY(20px)';
+                                child.style.transition = `all 0.6s cubic-bezier(0.22, 1, 0.36, 1) ${index * 0.1}s`;
+                                setTimeout(() => {
+                                    child.style.opacity = '1';
+                                    child.style.transform = 'translateY(0)';
+                                }, 100);
+                            });
+                        }
 
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
-                } else {
-                    mybutton.style.display = "none";
+                        target.classList.add('active');
+                        observer.unobserve(target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            });
+            reveals.forEach(reveal => observer.observe(reveal));
+
+            // --- 3D Scrolling Effect with Ultra-Smooth Interpolation ---
+            const scrollSections = document.querySelectorAll('.scroll-3d');
+            const sectionData = Array.from(scrollSections).map(section => ({
+                element: section,
+                currentRot: 0,
+                targetRot: 0
+            }));
+
+            // --- Scroll Progress Bar ---
+            const progressBar = document.getElementById('scroll-progress');
+
+            function updateFrame() {
+                const viewportHeight = window.innerHeight;
+                const scrollTop = window.pageYOffset;
+                const docHeight = document.documentElement.scrollHeight - viewportHeight;
+
+                // Update Progress Bar
+                if (progressBar) {
+                    const scrollPercent = (scrollTop / docHeight) * 100;
+                    progressBar.style.width = `${scrollPercent}%`;
                 }
+
+                sectionData.forEach(data => {
+                    const rect = data.element.getBoundingClientRect();
+                    const sectionCenter = rect.top + rect.height / 2;
+                    const viewportCenter = viewportHeight / 2;
+                    const distanceFromCenter = (sectionCenter - viewportCenter) / viewportHeight;
+
+                    // Target rotation based on distance from viewport center
+                    data.targetRot = distanceFromCenter * -12;
+
+                    // Ultra-smooth Lerp (reduced factor for a more premium glide)
+                    data.currentRot += (data.targetRot - data.currentRot) * 0.07;
+
+                    data.element.style.transform = `rotateX(${data.currentRot}deg)`;
+                });
+
+                requestAnimationFrame(updateFrame);
             }
 
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
-    </footer> <!-- External JS -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-    <script src="vendor/bootstrap/popper.min.js"></script>
-    <script src="vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="vendor/select2/select2.min.js "></script>
-    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-    <script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
-    <script src="vendor/isotope/isotope.min.js"></script>
-    <script src="vendor/lightcase/lightcase.js"></script>
-    <script src="vendor/waypoints/waypoint.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <!-- Main JS -->
-    <script src="js/app.min.js "></script>
-    <script src="//localhost:35729/livereload.js"></script>
+            requestAnimationFrame(updateFrame);
+        });
+    </script>
 </body>
-
 </html>
