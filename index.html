@@ -252,7 +252,7 @@
     </nav>
 
     <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-surface/95 backdrop-blur-2xl hidden flex-col items-center justify-center gap-8 transition-all duration-300 opacity-0 pointer-events-none">
+    <div id="mobile-menu" class="fixed inset-0 z-[100] bg-surface/95 backdrop-blur-2xl flex flex-col items-center justify-center gap-8 transition-all duration-300 opacity-0 pointer-events-none invisible">
         <button id="close-menu" class="absolute top-6 right-6 text-on-surface p-2">
             <span class="material-symbols-outlined text-3xl">close</span>
         </button>
@@ -484,24 +484,38 @@
 
             function toggleMenu(isOpen) {
                 if (isOpen) {
-                    mobileMenu.classList.remove('hidden');
+                    mobileMenu.classList.remove('invisible');
                     setTimeout(() => {
                         mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
-                        mobileMenu.classList.add('flex', 'opacity-100', 'pointer-events-auto');
+                        mobileMenu.classList.add('opacity-100', 'pointer-events-auto');
                     }, 10);
                 } else {
-                    mobileMenu.classList.remove('flex', 'opacity-100', 'pointer-events-auto');
+                    mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
                     mobileMenu.classList.add('opacity-0', 'pointer-events-none');
                     setTimeout(() => {
-                        mobileMenu.classList.add('hidden');
+                        mobileMenu.classList.add('invisible');
                     }, 300);
                 }
             }
 
-            mobileMenuBtn.addEventListener('click', () => toggleMenu(true));
-            closeMenuBtn.addEventListener('click', () => toggleMenu(false));
+            const handleOpen = (e) => {
+                e.preventDefault();
+                toggleMenu(true);
+            };
+            const handleClose = (e) => {
+                e.preventDefault();
+                toggleMenu(false);
+            };
+
+            mobileMenuBtn.addEventListener('click', handleOpen);
+            mobileMenuBtn.addEventListener('touchstart', handleOpen, {passive: false});
+
+            closeMenuBtn.addEventListener('click', handleClose);
+            closeMenuBtn.addEventListener('touchstart', handleClose, {passive: false});
+
             mobileLinks.forEach(link => {
                 link.addEventListener('click', () => toggleMenu(false));
+                link.addEventListener('touchstart', () => toggleMenu(false), {passive: true});
             });
 
             requestAnimationFrame(updateFrame);
